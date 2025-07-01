@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "./Estilogeneral.css";
+import "./EstiloGeneral.css";
 import "./Navbar.css";
 
 export default function Navbar() {

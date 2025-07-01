@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import "./Estilogeneral.css";
+import "./EstiloGeneral.css";
 import "./Modelo.css";
 
 export default function Modelo() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./EstiloGeneral.CSS";
+import "./EstiloGeneral.css";
 import "./Integrantes.CSS";
 
 export default function Integrantes() {
@@ -21,7 +21,7 @@ export default function Integrantes() {
         <li>
           <p>Julian Granados Mendez </p>
         </li>
-      </ul>  
+      </ul>
     </div>
   );
 }
