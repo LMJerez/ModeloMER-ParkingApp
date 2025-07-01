@@ -1,6 +1,6 @@
 import React from "react";
 import "./EstiloGeneral.css";
-import "./Integrantes.CSS";
+import "./Integrantes.css";
 
 export default function Integrantes() {
   return (
