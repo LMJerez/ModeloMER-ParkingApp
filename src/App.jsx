@@ -4,7 +4,8 @@ import Login from "./components/Login.jsx";
 import Info from "./components/Info.jsx";
 import Integrantes from "./components/Integrantes.jsx";
 import Modelo from "./components/Modelo.jsx";
-import Operaciones from "./components/Operaciones.jsx"; 
+import Operaciones from "./components/Operaciones.jsx";
+import IframePreloader from "./components/IframePreloader.jsx"; 
 import "./App.css";
 
 export default function App() {
@@ -17,7 +18,10 @@ export default function App() {
           <Route path="/modelo" element={<Modelo/>} />            
           <Route path="/operaciones" element={<Operaciones />} />        
           <Route path="/integrantes" element={<Integrantes />} /> 
-        </Routes>      
+        </Routes>
+
+        {/* Precarga del iframe en segundo plano */}
+        <IframePreloader />      
     </>
   );
 }

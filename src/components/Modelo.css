@@ -14,7 +14,9 @@
 }
 
 .page iframe:hover {
-  transform: scale(1.01);
+  box-shadow: 0 0 0 3px #6196fa inset, 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;  
+  background-color: rgba(240, 248, 255, 0.1); /* opcional */
 }
 
 /* PROGRESS BAR DE CARGA */
