@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./EstiloGeneral.css";
-import "./operaciones.css";
+import "./Operaciones.css";
 
 export default function Operaciones() {
   const [currentPage, setCurrentPage] = useState(0);
