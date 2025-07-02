@@ -12,6 +12,22 @@
   font-size: 1rem;
 }
 
+/* Contenido desplazable */
+.scrollableContainer {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.scrollableContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollableContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
 .infoPage {
   text-align: center;
   padding: 30px;
@@ -95,5 +111,10 @@
   .btnBack {
     width: 100%;
     max-width: 300px;
+  }
+
+  .scrollableContainer {
+    max-height: none;
+    overflow: visible;
   }
 }
