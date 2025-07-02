@@ -36,10 +36,10 @@ body {
 
   /* Fondo con capa translúcida encima de la imagen */
   background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(117, 117, 117, 0.6)
+      rgba(186, 202, 253, 0.7),
+      rgba(156, 128, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/9716297/pexels-photo-9716297.jpeg")
+    url("https://res.cloudinary.com/dptqdghgv/image/upload/v1751495558/fondo_parking_vt9rmh.jpg")
       no-repeat center center fixed;
 
   background-size: cover;
