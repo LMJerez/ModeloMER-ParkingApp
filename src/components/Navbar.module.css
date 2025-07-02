@@ -5,25 +5,25 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Header contiene título y hamburguesa */
+/* Header: título y botón hamburguesa */
 .navbarHeader {
-  flex: 1; /* ocupa el espacio entre el botón y el borde */
-  text-align: center; /* centra el texto */
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Marca / título */
+/* Título centrado en su bloque */
 .navbarBrand {
+  flex: 1;
+  text-align: center;
   font-size: 1.6rem;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
 }
 
-/* Botón hamburguesa */
+/* Botón hamburguesa (oculto por defecto) */
 .hamburger {
   font-size: 1.8rem;
   background: none;
@@ -33,7 +33,7 @@
   display: none;
 }
 
-/* Lista de enlaces */
+/* Lista de enlaces en escritorio */
 .navbarLinks {
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +44,7 @@
   padding: 0;
 }
 
-/* Ítems */
+/* Estilo de enlaces */
 .navbarLinks li a {
   display: inline-block;
   padding: 8px 16px;
@@ -66,7 +66,7 @@
 }
 
 /* -------------------------
-   RESPONSIVE DESIGN
+   RESPONSIVE
 -------------------------- */
 @media (max-width: 768px) {
   .hamburger {
@@ -77,8 +77,8 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     gap: 10px;
+    margin-top: 10px;
   }
 
   .navbarLinks.open {

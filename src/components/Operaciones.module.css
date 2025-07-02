@@ -18,6 +18,14 @@
   margin-top: 30px;
 }
 
+/* Envuelve cada imagen con su título */
+.imageContainer {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .imageRow p {
   margin-bottom: 8px;
   font-weight: 600;
@@ -129,7 +137,12 @@
     align-items: center;
   }
 
+  .imageContainer {
+    width: 100%;
+  }
+
   .image {
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
   }
 }

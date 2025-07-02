@@ -102,7 +102,7 @@ export default function Operaciones() {
 
       {/* Imagen fija */}
       <div className={styles.imageRow}>
-        <div>
+        <div className={styles.imageContainer}>
           <p>{imagenFija.titulo}</p>
           <img
             src={imagenFija.url}
@@ -116,7 +116,7 @@ export default function Operaciones() {
       {/* Imágenes paginadas */}
       <div className={styles.imageRow}>
         {currentImages.map((img, index) => (
-          <div key={index}>
+          <div key={index} className={styles.imageContainer}>
             <p>{img.titulo}</p>
             <img
               src={img.url}
