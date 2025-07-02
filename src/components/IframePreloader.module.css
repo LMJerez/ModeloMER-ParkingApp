@@ -1,0 +1,9 @@
+.iframeOculto {
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  border: none !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  z-index: -9999;
+}

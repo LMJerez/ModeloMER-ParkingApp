@@ -1,18 +1,30 @@
 import { Link } from "react-router-dom";
-import React from "react";
-import "./EstiloGeneral.css";
-import "./Navbar.css";
+import React, { useState } from "react";
+import styles from "./Navbar.module.css";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">SISTEMA DE PARQUEO 🅿️</div>
-      <ul className="navbar-links">
+    <nav className={styles.navbar}>
+      <div className={styles.navbarHeader}>
+        <div className={styles.navbarBrand}>SISTEMA DE PARQUEO 🅿️</div>
+        <button className={styles.hamburger} onClick={toggleMenu}>
+          ☰
+        </button>
+      </div>
+
+      <ul
+        className={`${styles.navbarLinks} ${isOpen ? styles.open : ""}`}
+        onClick={() => setIsOpen(false)}
+      >
         <li>
-          <Link to="/login">INICIO </Link>
+          <Link to="/login">INICIO</Link>
         </li>
         <li>
-          <Link to="/info">INFORMACIÓN </Link>
+          <Link to="/info">INFORMACIÓN</Link>
         </li>
         <li>
           <Link to="/modelo">MODELO ER</Link>

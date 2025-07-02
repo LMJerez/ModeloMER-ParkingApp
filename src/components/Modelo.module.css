@@ -1,8 +1,9 @@
-.page--wide {
+.pageWide {
   max-width: 1200px;
 }
 
-.page iframe {
+/* Estilo directo para el iframe */
+.pageIframe {
   width: 100%;
   min-width: 320px;
   height: 640px;
@@ -13,21 +14,21 @@
   transition: transform 0.3s ease;
 }
 
-.page iframe:hover {
+.pageIframe:hover {
   box-shadow: 0 0 0 3px #6196fa inset, 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;  
-  background-color: rgba(240, 248, 255, 0.1); /* opcional */
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.1);
 }
 
-/* PROGRESS BAR DE CARGA */
-.progress-container {
+/* Barra de progreso */
+.progressContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 16px;
 }
 
-.progress-bar {
+.progressBar {
   width: 80%;
   height: 8px;
   background: linear-gradient(90deg, #3498db 0%, #a29bfe 100%);
@@ -35,14 +36,23 @@
   animation: loading 1.5s infinite ease-in-out;
 }
 
-.progress-text {
+.progressText {
   margin-top: 6px;
   font-size: 0.95rem;
   color: #555;
 }
 
 @keyframes loading {
-  0% { transform: scaleX(0.1); opacity: 0.5; }
-  50% { transform: scaleX(1); opacity: 1; }
-  100% { transform: scaleX(0.1); opacity: 0.5; }
+  0% {
+    transform: scaleX(0.1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0.1);
+    opacity: 0.5;
+  }
 }

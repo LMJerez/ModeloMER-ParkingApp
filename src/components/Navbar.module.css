@@ -1,0 +1,87 @@
+.navbar {
+  padding: 16px 24px;
+  background: linear-gradient(to right, #6196fa, #8571fc, #8e44ad);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header contiene título y hamburguesa */
+.navbarHeader {
+  flex: 1; /* ocupa el espacio entre el botón y el borde */
+  text-align: center; /* centra el texto */
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+/* Marca / título */
+.navbarBrand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Lista de enlaces */
+.navbarLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+/* Ítems */
+.navbarLinks li a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbarLinks li a:hover {
+  background-color: white;
+  color: #5a2d82;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* -------------------------
+   RESPONSIVE DESIGN
+-------------------------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbarLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .navbarLinks.open {
+    display: flex;
+  }
+}

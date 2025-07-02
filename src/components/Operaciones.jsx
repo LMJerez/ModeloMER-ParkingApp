@@ -1,19 +1,16 @@
 import React, { useState } from "react";
-import "./EstiloGeneral.css";
-import "./Operaciones.css";
+import styles from "./Operaciones.module.css";
 
 export default function Operaciones() {
   const [currentPage, setCurrentPage] = useState(0);
   const [imagenAmpliada, setImagenAmpliada] = useState(null);
   const itemsPerPage = 3;
 
-  // Imagen fija
   const imagenFija = {
     titulo: "🔹Modelo Entidad Relación",
     url: "https://res.cloudinary.com/dptqdghgv/image/upload/v1751230512/00_esquema_ytfsfl.png",
   };
 
-  // Imágenes dinámicas
   const imagenes = [
     {
       titulo: "🔹Insert Parqueadero",
@@ -100,52 +97,50 @@ export default function Operaciones() {
   );
 
   return (
-    <div className="login-container">
+    <div className={styles.container}>
       <h2>📋 Operaciones de Prueba</h2>
 
       {/* Imagen fija */}
-      <div className="image-row">
+      <div className={styles.imageRow}>
         <div>
           <p>{imagenFija.titulo}</p>
           <img
             src={imagenFija.url}
             alt="Modelo ER"
-            className="image"
+            className={styles.image}
             onClick={() => setImagenAmpliada(imagenFija)}
-            style={{ cursor: "pointer" }}
           />
         </div>
       </div>
 
       {/* Imágenes paginadas */}
-      <div className="image-row">
+      <div className={styles.imageRow}>
         {currentImages.map((img, index) => (
           <div key={index}>
             <p>{img.titulo}</p>
             <img
               src={img.url}
               alt={img.titulo}
-              className="image"
+              className={styles.image}
               onClick={() => setImagenAmpliada(img)}
-              style={{ cursor: "pointer" }}
             />
           </div>
         ))}
       </div>
 
       {/* Botones de navegación */}
-      <div className="nav-buttons">
+      <div className={styles.navButtons}>
         <button
           onClick={() => setCurrentPage((p) => p - 1)}
           disabled={currentPage === 0}
-          className="button"
+          className={styles.button}
         >
           ◀ Anterior
         </button>
         <button
           onClick={() => setCurrentPage((p) => p + 1)}
           disabled={currentPage === totalPages - 1}
-          className="button"
+          className={styles.button}
         >
           Siguiente ▶
         </button>
@@ -153,10 +148,16 @@ export default function Operaciones() {
 
       {/* Modal de imagen ampliada */}
       {imagenAmpliada && (
-        <div className="modal-overlay" onClick={() => setImagenAmpliada(null)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div
+          className={styles.modalOverlay}
+          onClick={() => setImagenAmpliada(null)}
+        >
+          <div
+            className={styles.modalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
-              className="modal-close"
+              className={styles.modalClose}
               onClick={() => setImagenAmpliada(null)}
             >
               ✖
