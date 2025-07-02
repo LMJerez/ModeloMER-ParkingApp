@@ -56,3 +56,39 @@
     opacity: 0.5;
   }
 }
+
+.errorBox {
+  background-color: #fff3f3;
+  border-left: 5px solid #e74c3c;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+  color: #c0392b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.errorButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
