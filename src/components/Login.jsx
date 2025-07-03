@@ -5,7 +5,9 @@ export default function Login() {
   const [infoVisible, setInfoVisible] = useState(null);
 
   const handleShowInfo = (id) => setInfoVisible(id);
-  const handleBack = () => setInfoVisible(null);
+  const handleBackToStart = () => setInfoVisible(null);
+  const handleNext = () => setInfoVisible((prev) => prev + 1);
+  const handlePrev = () => setInfoVisible((prev) => prev - 1);
 
   return (
     <div className={styles.loginContainer}>
@@ -68,9 +70,6 @@ export default function Login() {
               El sistema registra vehículos, controla capacidad por tipo y
               calcula tiempo de permanencia para generar el total a pagar.
             </p>
-            <button className={styles.btnBack} onClick={handleBack}>
-              Volver
-            </button>
           </div>
         )}
 
@@ -95,9 +94,6 @@ export default function Login() {
               Consultas para registro, búsqueda y control de información sobre
               vehículos y parqueos.
             </p>
-            <button className={styles.btnBack} onClick={handleBack}>
-              Volver
-            </button>
           </div>
         )}
 
@@ -113,8 +109,27 @@ export default function Login() {
               Sistema desplegado con React + Vite + PostgreSQL, usando rutas,
               diseño responsivo y despliegue en Render.
             </p>
-            <button className={styles.btnBack} onClick={handleBack}>
-              Volver
+          </div>
+        )}
+
+        {infoVisible !== null && (
+          <div className={styles.navButtons}>
+            <button onClick={handleBackToStart} className={styles.button}>
+              Inicio
+            </button>
+            <button
+              onClick={handlePrev}
+              disabled={infoVisible <= 1}
+              className={styles.button}
+            >
+              ◀ Anterior
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={infoVisible >= 3}
+              className={styles.button}
+            >
+              Siguiente ▶
             </button>
           </div>
         )}

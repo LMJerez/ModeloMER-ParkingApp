@@ -1,5 +1,5 @@
 .pageWide {
-  max-width: 1200px;
+  max-width: 90% !important;
 }
 
 /* Estilo directo para el iframe */

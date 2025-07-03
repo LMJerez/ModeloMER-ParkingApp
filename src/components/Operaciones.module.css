@@ -1,7 +1,7 @@
 .container {
   text-align: center;
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 80% !important;
   margin: 30px auto;
   background-color: white;
   border-radius: 12px;
@@ -131,7 +131,7 @@
 }
 
 /* Responsive: imágenes en columna en móviles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .imageRow {
     flex-direction: column;
     align-items: center;

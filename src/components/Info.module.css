@@ -27,7 +27,7 @@
 }
 
 /* En móvil: altura ilimitada, sin scroll interno */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .scrollableContainer {
     max-height: none;
     overflow: visible;
