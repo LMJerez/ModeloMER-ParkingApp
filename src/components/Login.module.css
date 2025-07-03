@@ -1,8 +1,9 @@
 .loginContainer {
+  width: 100%;
+  max-width: 1000px;
   background-color: white;
   color: #333;
   padding: 40px 30px;
-  max-width: 60%;
   margin: 30px auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -57,7 +58,7 @@
 
 .infoImg {
   width: 100%;
-  max-width: 90%;
+  max-width: 1000px;
   margin: 20px 0;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -115,7 +116,7 @@
 
   .infoCard {
     width: 100%;
-    max-width: 90%;
+    max-width: 1000px;
     font-size: 1rem;
   }
 
@@ -125,7 +126,7 @@
 
   .button {
     width: 100%;
-    max-width: 300px;
+    max-width: 1000px;
   }
 
   .scrollableContainer {

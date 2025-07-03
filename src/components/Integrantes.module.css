@@ -1,6 +1,6 @@
 .pageList {
   width: 100%;
-  max-width: 40% !important; /* Acorde al contenido prioridad sobre app.css*/
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 16px; /* padding lateral para móviles */
 }
