@@ -131,7 +131,7 @@
 }
 
 /* Responsive: imágenes en columna en móviles */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .imageRow {
     flex-direction: column;
     align-items: center;

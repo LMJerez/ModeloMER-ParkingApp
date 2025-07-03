@@ -8,10 +8,10 @@ export default function Integrantes() {
       <hr />
       <p>Grupo:</p>
       <ul>
-        <li>👤 Dennys Johanna Rubio Illamizar</li>
-        <li>👤 Luis Mario Jerez Pabón</li>
-        <li>👤 Wilker Julián Botello Medina</li>
-        <li>👤 Julián Granados Méndez</li>
+        <li>👩‍💻 Dennys Johanna Rubio Illamizar</li>
+        <li>👨‍💻 Luis Mario Jerez Pabón</li>
+        <li>👨‍💻 Wilker Julián Botello Medina</li>
+        <li>👨‍💻 Julián Granados Méndez</li>
       </ul>
     </div>
   );

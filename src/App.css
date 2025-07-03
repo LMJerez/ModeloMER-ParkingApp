@@ -58,7 +58,7 @@ body {
 .page {
   margin: 2rem auto;
   padding: 2.5rem;
-  max-width: 90%;
+  max-width: 80%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -324,7 +324,7 @@ body {
   color: #444;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .page h1 {
     font-size: 1.5rem;
   }
