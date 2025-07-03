@@ -6,7 +6,7 @@ export default function Integrantes() {
     <div className={`page ${styles.pageList}`}>
       <h2>📒 Integrantes</h2>
       <hr />
-      <p>Grupo:</p>
+      <h3>Grupo:</h3>
       <ul>
         <li>👩‍💻 Dennys Johanna Rubio Illamizar</li>
         <li>👨‍💻 Luis Mario Jerez Pabón</li>

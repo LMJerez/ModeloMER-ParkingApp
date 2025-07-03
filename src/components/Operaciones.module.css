@@ -118,18 +118,25 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: none;
+  background-color: #ffffff;
+  color: #6f82ee;
+  border: 2px solid #576eee;
   border-radius: 50%;
-  padding: 6px 10px;
-  font-size: 1.2rem;
+  width: 36px;
+  height: 36px;
+  font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 0.2s ease;
 }
 
 .modalClose:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #6f82ee;
+  color: white;
 }
 
 /* Responsive: imágenes en columna en móviles */

@@ -1,11 +1,13 @@
 .pageWide {
-  max-width: 90% !important;
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* Estilo directo para el iframe */
 .pageIframe {
   width: 100%;
   max-width: 1000px;
+  aspect-ratio: 1 / 1; /* Alto igual al ancho */
   border: none;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -28,8 +30,9 @@
 }
 
 .progressBar {
-  width: 80%;
-  height: 8px;
+  width: 100%;
+  max-width: 1000px;
+  height: 6px;
   background: linear-gradient(90deg, #3498db 0%, #a29bfe 100%);
   border-radius: 10px;
   animation: loading 1.5s infinite ease-in-out;

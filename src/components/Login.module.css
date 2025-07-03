@@ -13,20 +13,6 @@
   font-size: 1rem;
 }
 
-.scrollableContainer {
-  max-height: 70vh;
-  overflow-y: auto;
-  padding-right: 8px;
-}
-
-.scrollableContainer::-webkit-scrollbar {
-  width: 6px;
-}
-.scrollableContainer::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
 .infoPage {
   text-align: center;
   padding: 30px;
@@ -102,6 +88,7 @@
   .loginContainer {
     padding: 20px 16px;
     font-size: 0.98rem;
+    max-width: 100%;
   }
 
   .infoPage {
@@ -116,7 +103,7 @@
 
   .infoCard {
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
     font-size: 1rem;
   }
 
@@ -126,11 +113,6 @@
 
   .button {
     width: 100%;
-    max-width: 1000px;
-  }
-
-  .scrollableContainer {
-    max-height: none;
-    overflow: visible;
+    max-width: 100%;
   }
 }

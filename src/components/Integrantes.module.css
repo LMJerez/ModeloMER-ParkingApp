@@ -7,13 +7,12 @@
 
 /* hr decorativo */
 .pageList hr {
-  width: 60px;
+  width: 100%;
   margin: 10px auto 20px;
   border: 2px solid #3498db;
   border-radius: 2px;
 }
 
-/* Sin viñeta se agrega 👤 a los li*/
 .pageList li {
   list-style-type: none; /* sin viñeta */
   padding: 8px 12px;
